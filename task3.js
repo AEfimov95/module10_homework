@@ -18,6 +18,7 @@ function success (position) {
     const latitude  = position.coords.latitude;
     const longitude = position.coords.longitude;
     let geoPosition = document.createElement('a');
+    geoPosition.classList.add('align-self-end');
     geoPosition.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
     geoPosition.textContent = 'Мое местоположение';
     chat.appendChild(geoPosition);
